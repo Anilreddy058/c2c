@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="veg.css">
+
+   <!-- custom js file link  -->
+   <script src="veg.js" defer></script>
+
+</head>
+<body>
+   
+<div class="container">
+
+   <h3 class="title"><b>CHAI</b></h3>
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="chai types/Blacktea.jpg" alt="black tea">
+         <h3>black tea</h3>
+         <div class="price">₹69</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="chai types/buttertea.jpg" alt="butter tea">
+         <h3>butter tea</h3>
+         <div class="price">₹55</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="chai types/cappuccino.jpg" alt="cappuccino">
+         <h3>cappuccino </h3>
+         <div class="price">₹99</div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="chai types/darjeelingtea.jpg" alt="darjeeling tea">
+         <h3>darjeeling tea</h3>
+         <div class="price">₹69</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="chai types/elaichitea.jpg" alt="elaichi tea">
+         <h3>elaichi tea</h3>
+         <div class="price">₹79</div>
+      </div>
+      <div class="product" data-name="p-6">
+         <img src="chai types/greentea.jpg" alt="green tea">
+         <h3>green tea</h3>
+         <div class="price">₹65</div>
+      </div>
+      <div class="product" data-name="p-7">
+         <img src="chai types/herbaltea.jpg" alt="herbal tea">
+         <h3>herbal tea</h3>
+         <div class="price">₹60</div>
+      </div>
+      <div class="product" data-name="p-8">
+         <img src="chai types/irani chai.jpg" alt="irani chai">
+         <h3>irani chai</h3>
+         <div class="price">₹75</div>
+      </div>
+      <div class="product" data-name="p-9">
+         <img src="chai types/kahwatea.jpg" alt="kahwa tea">
+         <h3>kahwa tea</h3>
+         <div class="price">₹65</div>
+      </div>
+      <div class="product" data-name="p-10">
+         <img src="chai types/lemontea.jpg" alt="lemon tea">
+         <h3>lemon tea</h3>
+         <div class="price">₹75</div>
+      </div>
+      <div class="product" data-name="p-11">
+         <img src="chai types/masalatea.jpg" alt="masala tea">
+         <h3>masala tea</h3>
+         <div class="price">₹89</div>
+      </div>
+      <div class="product" data-name="p-12">
+         <img src="chai types/nilgiritea.jpg" alt="nilgiri tea">
+         <h3>nilgiri tea</h3>
+         <div class="price">₹69</div>
+      </div> <div class="product" data-name="p-13">
+         <img src="chai types/noonchai.jpg" alt="noon chai">
+         <h3>noon chai</h3>
+         <div class="price">₹85</div>
+      </div>
+      <div class="product" data-name="p-14">
+         <img src="chai types/whitetea.jpg" alt="white tea">
+         <h3>white tea</h3>
+         <div class="price">₹85</div>
+      </div>
+   </div>
+
+
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/blacktea.jpg" alt=" Blacktea">
+      <h3>black tea</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p> a dark reddish-gold hue, a hearty, slightly astringent flavor, and a moderate amount of caffeine.</p>
+      <div class="price">₹69</div>
+      <div class="buttons" >
+         <a href="buy.html?name=Blacktea&price=69&image=images/blacktea.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('Blacktea', 69, 'images/blacktea.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="images/buttertea.jpg" alt="buttertea">
+      <h3>butter tea</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>butter tea, a unique tea deeply connected with the Himalayan culture.</p>
+      <div class="price">₹55</div>
+      <div class="buttons">
+         <a href="buy.html?name=buttertea&price=55&image=images/buttertea.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('buttertea', 55, 'images/buttertea.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/cappuccino.jpg" alt="cappuccino">
+      <h3>cappuccino</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p> A cappuccino is traditionally served in a small cup with a handle with a thick layer of foam.</p>
+      <div class="price">₹99</div>
+      <div class="buttons">
+         <a href="buy.html?name=cappuccino&price=99&image=images/cappuccino.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('cappuccino', 99, 'images/cappuccino.jpg')">add to cart</a>
+      </div>
+   </div>
+   
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="images/darjeelingtea.jpg"alt="darjeelingtea">
+      <h3>darjeeling tea</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Darjeeling Tea, also known as the "Champagne of Teas," is a unique and highly sought-after tea.</p>
+      <div class="price">₹69</div>
+      <div class="buttons" >
+         <a href="buy.html?name=darjeelingtea&price=69&image=images/darjeelingtea.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('darjeelingtea', 69, 'images/darjeelingtea.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="images/elaichitea.jpg" alt="elaichitea">
+      <h3>elaichi tea</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>elaichi Tea is a fragrant and soothing blend that highlights the sweet and aromatic qualities of cardamom.</p>
+      <div class="price">₹79</div>
+      <div class="buttons">
+         <a href="buy.html?name=elaichitea&price=79&image=images/elaichitea.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('elaichitea', 79, 'images/elaichitea.jpg')" >add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/greentea.jpg" alt="greentea">
+      <h3>green tea</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Green tea has a light, delicate taste. It's noted for its fresh, vegetal flavour that has subtle grassy notes.</p>
+      <div class="price">₹65</div>
+      <div class="buttons">
+         <a href="buy.html?name=greentea&price=65&image=images/greentea.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('greentea', 65, 'images/greentea.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="images/herbaltea.jpg" alt="herbaltea">
+      <h3>herbal tea</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>herbal tea is an infusion or blend of various leaves, fruits, bark, roots, or flowers belonging to almost any edible, non-tea plant.</p>
+      <div class="price">₹60</div>
+      <div class="buttons">
+         <a href="buy.html?name=herbaltea&price=60&image=images/herbaltea.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('herbaltea', 60, 'images/herbaltea.jpg')">add to cart</a>
+      </div>
+     </div>   
+
+
+      <div class="preview" data-target="p-8">
+         <i class="fas fa-times"></i>
+         <img src="chai types/irani chai.jpg" alt="iranichai">
+         <h3>irani chai</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Irani chai is a unique form of tea unlike any other version of Indian chai, made by the addition of mawa or khoya to black tea.</p>
+         <div class="price">₹75</div>
+         <div class="buttons">
+            <a href="buy.html?name=irani chai&price=75&image=images/irani chai.jpg" class="buy">buy now</a>
+            <a href="#" class="cart"  onclick="addToCart('iranichai', 75, 'iranichai.jpg')">add to cart</a>
+         </div> 
+      </div> 
+
+         <div class="preview" data-target="p-9">
+            <i class="fas fa-times"></i>
+            <img src="images/kahwatea.jpg" alt="kahwatea">
+            <h3>kahwa tea</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>Kahwa is a special drink that means “sweetened tea” in Kashmiri. It always includes cinnamon, cardamom, and sweetener.</p>
+            <div class="price">₹65</div>
+            <div class="buttons">
+               <a href="buy.html?name=kahwatea&price=65&image=images/kahwatea.jpg" class="buy">buy now</a>
+               <a href="#" class="cart"  onclick="addToCart('kahwatea', 65, 'images/kahwatea.jpg')">add to cart</a>
+            </div>
+           </div>   
+
+            <div class="preview" data-target="p-10">
+               <i class="fas fa-times"></i>
+               <img src="chai types/lemontea.jpg" alt="lemontea">
+               <h3>lemon tea</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p> It is one of the best things to start your mornings with. </p>
+               <div class="price">₹75</div>
+               <div class="buttons">
+                  <a href="buy.html?name=lemontea&price=75&image=images/lemontea.jpg" class="buy">buy now</a>
+                  <a href="#" class="cart"  onclick="addToCart('lemontea', 75, 'lemontea.jpg')">add to cart</a>
+               </div>
+            </div> 
+               
+               <div class="preview" data-target="p-11">
+                  <i class="fas fa-times"></i>
+                  <img src="chai types/masalatea.jpg" alt="masalatea">
+                  <h3>masala tea</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                     <span>( 250 )</span>
+                  </div>
+                  <p>Masala Chai is an Indian beverage made by brewing black tea with fragrant spices, sugar and milk. </p>
+                  <div class="price">₹89</div>
+            <div class="buttons">
+               <a href="buy.html?name=masala tea&price=89&image=images/masalatea.jpg" class="buy">buy now</a>
+               <a href="#" class="cart"  onclick="addToCart('masalatea', 89, 'masalatea.jpg')">add to cart</a>
+            </div>
+       </div>
+
+
+       <div class="preview" data-target="p-12">
+         <i class="fas fa-times"></i>
+         <img src="images/nilgiritea.jpg" alt="nilgiri tea">
+         <h3>nilgiri tea</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Nilgiri tea has a slightly fruity, minty flavor, probably because trees like the Blue Gum and Eucalyptus dot the region.</p>
+         <div class="price">₹69</div>
+   <div class="buttons">
+      <a href="buy.html?name=nilgiri tea&price=69&image=images/nilgiritea.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('nilgiritea', 69, 'images/nilgiritea.jpg')">add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-13">
+   <i class="fas fa-times"></i>
+   <img src="images/noonchai.jpg" alt="noonchai">
+   <h3>noon chai</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Noon chai is traditionally made from green tea leaves, milk, salt and baking soda, and is usually cooked in a samavar.</p>
+   <div class="price">₹85</div>
+<div class="buttons">
+<a href="buy.html?name=noonchai&price=85&image=images/noonchai.jpg" class="buy">buy now</a>
+<a href="#" class="cart"  onclick="addToCart('noonchai', 85, 'images/noonchai.jpg')">add to cart</a>
+</div>
+</div>
+
+<div class="preview" data-target="p-14">
+   <i class="fas fa-times"></i>
+   <img src="images/whitetea.jpg" alt="whitetea">
+   <h3>white tea</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>White tea is known for its delicate, subtle flavor profile. It has a light, slightly sweet taste with floral and fruity notes. </p>
+   <div class="price">₹85</div>
+<div class="buttons">
+<a href="buy.html?name=whitetea&price=85&image=images/whitetea.jpg" class="buy">buy now</a>
+<a href="#" class="cart"  onclick="addToCart('whitetea', 85, 'images/whitetea.jpg')">add to cart</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

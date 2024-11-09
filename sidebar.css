@@ -1,0 +1,108 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100vh;
+    background: #333;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar:hover {
+    width: 250px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-item {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    transition: background 0.3s ease;
+    position: relative;
+    width: 100%;
+}
+
+.nav-link i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+
+.link-text {
+    font-size: 1rem;
+    display: none;
+    white-space: nowrap;
+}
+
+.navbar:hover .link-text {
+    display: inline;
+}
+
+.navbar:hover .nav-link {
+    justify-content: flex-start;
+}
+
+.nav-link:hover {
+    background: #575757;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 60px;
+    }
+
+    .navbar:hover {
+        width: 200px;
+    }
+
+    .nav-link i {
+        font-size: 1.3rem;
+    }
+
+    .link-text {
+        font-size: 0.9rem;
+    }
+}

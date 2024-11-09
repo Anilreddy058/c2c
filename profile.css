@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+    animation: backgroundAnimation 10s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+    }
+    100% {
+        background: linear-gradient(135deg, #FF9A8B 10%, #FF6A88 100%);
+    }
+}
+
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: textFadeIn 1.5s ease-in-out;
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: textFadeIn 1.5s ease-in-out 0.5s forwards;
+}
+
+strong {
+    color: #000;
+}
+
+/* Hover Effect */
+p:hover {
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.profile-container:hover {
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}

@@ -1,0 +1,94 @@
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://media.istockphoto.com/id/475511846/vector/kitchen-seamless-pattern-vector-background.jpg?s=612x612&w=0&k=20&c=inpW5Mc2MFyuc7PsMXVY49OUBU39EXekcCNe8xVeI_k=') no-repeat center center fixed; /* Replace with your food image */
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent overlay */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 50vh;
+    z-index: 1;
+    padding: 20px;
+}
+
+.card {
+    flex: 0 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card button {
+    padding: 10px 25px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #e64a19;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}

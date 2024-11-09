@@ -1,0 +1,118 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #0077b6;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* Main Content Styling */
+main {
+    background-color: #fff;
+    width: 85%;
+    max-width: 1100px;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Cart Items Container */
+#cart-items-container {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Cart Summary Styling */
+#cart-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#cart-summary h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#total-price {
+    color: #0077b6;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Animation for Total Price */
+#total-price {
+    transition: color 0.3s ease;
+}
+
+#total-price:hover {
+    color: #ff595e;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    #cart-summary h2 {
+        font-size: 1.5rem;
+    }
+
+    #total-price {
+        font-size: 1.8rem;
+    }
+}

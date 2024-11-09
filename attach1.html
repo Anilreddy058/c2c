@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Left Side Navigation Bar</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <!-- Link to FontAwesome for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="attach1.css">
+    <style>
+        *,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.total{
+    display:flex;
+    flex-direction: row;
+}
+body{
+    margin-left:80px;
+    margin-right:0px;
+    background-color:antiquewhite;
+}
+.nav1{
+    width:100%;
+    padding:30px;
+    display: flex;
+}
+.nav1 .logo h1{
+    font-weight: 600;
+    font-family: sans-serif;
+    color:black;
+    margin-top: 10px;
+}
+.nav1 .logo b{
+    color:#ff511c;
+}
+.content
+{
+    display:grid;
+    margin-left:0px;
+    gap:30px;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+.content .content-left{
+    display:block;
+    width:100%;
+    height: 100%;
+}
+.content .content-left .info
+{
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.content .content-left .info p{
+    font-size: 30px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+.content .content-left button{
+    padding:10px 23px;
+    background-color: #ff511c;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    cursor:pointer;
+}
+.content .entire .content-right{
+  display: block;
+  width: 50%;
+  height:50%;
+}
+.resp{
+width:50%;
+height:50%;
+}
+.content-right #logo1{
+    align-items: center; 
+    width:400px;
+    height: auto;
+    border-radius:460rem;
+    padding-left: 20px;
+    position: relative;
+    animation:rotate 10s linear infinite;
+}
+.new h1{
+    margin-left:60px;
+}
+.content-right #logo1
+{
+margin-bottom:100px;
+}
+@keyframes rotate
+{
+0%{
+    transform:rotate(0deg);
+}
+100%{
+    transform:rotate(360deg);
+}
+}
+.category
+{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.category .list-items{
+    width: 90%;
+    position: relative;
+}.category .list-items h3{
+    font-size: 30px;
+    
+    font-family: sans-serif;
+    margin-bottom: 100px;
+}
+.category .list-items .card-list{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.category .card-list .card{
+    width:270px;
+    height:auto;
+    display:block;
+    padding:10px;
+    border-radius:10px;
+    outline:2px solid #faad96;
+    position: relative;
+    background: #ffff;
+
+}
+.category .card-list .card img{
+    width:130px;
+    height: auto;
+    bottom:170px;
+    left:70px;
+    object-fit: cover;
+    object-position:center;
+    background-repeat: no-repeat;
+    position:absolute;
+    box-shadow :0 20px 20px #faad96;
+    border-radius: 50%;
+}
+.category .card-list .card .food-title{
+    padding:40px 0 10px;
+}
+.category .card-list .card .food-title h1{
+    text-align:center ;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.category .card .desc-food p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.category .card .price
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text
+{
+    font-size:22px;
+    color:purple;
+    line-height: 35px;
+
+}
+.text b{
+    color:#ff511c;
+}
+
+.bottom
+{
+    margin-top: 150px;
+    display:flex;
+    flex-wrap: wrap-reverse;
+}
+.bottom .chef-feed{
+    flex:0.5;
+    margin-top:30px;
+}
+.bottom .chef{
+flex:0.5;
+text-align:right;
+}
+.bottom .chef img{
+    margin-top: -130px;
+    width:20vw;
+    border:5px solid black;
+}
+.bottom .chef {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.bottom .chef .chef1 img{
+    height:300px;
+}
+.bottom .chef .one{
+    padding:20px 20px;
+}
+
+.bottom .chef-feed h2{
+    font-size:32px;
+    margin-bottom:25px;
+}
+.bottom .chef-feed p{
+    font-size:20px;
+    line-height:25px;
+    margin-bottom: 10px;
+}
+.bottom .chef-detail{
+    margin-top:20px;
+    display:flex;
+    margin:25px 0;
+    align-items:center;
+}
+.bottom .chef-detail img{
+    width:50px;
+    border-radius:100%;
+    margin-right: 150px;
+    border:4px solid rgb(255, 255, 255);
+}
+.bottom .chef-details h6{
+    font-size:74px;
+}
+.bottom .chef-details p{
+    font-size: 31px;
+    color:red;
+}
+.bottom .chef-vic{
+    display: flex;
+    align-items: center;
+    padding:55px 430px;
+    background-color: rgb(255,219,185);
+    border-radius:0 10px 0 0;
+    margin-top:40px;
+    width:100%;
+}
+.bottom .chef-vic div{
+    display: flex;
+    align-items:flex-start;
+    margin-right:100px;
+    flex:0.5;
+    height: 67px;
+    overflow: hidden;
+}
+.bottom .chef-vic .div i, 
+.bottom .chef-vic div h4{
+    font-size: 30px;
+    margin-right: 18px;
+
+}
+.bottom .chef-vic div h4{
+    color:red;
+}
+.bottom .chef-vic div p{
+    font-size: 15px;
+    padding-top: 5px;
+    line-height: 10px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+.social-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.social-box {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.social-box i {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.social-box h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.social-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+.social-box a {
+    text-decoration: none;
+    color: inherit;
+}
+.entire{
+    display: flex;
+    flex-direction: column;
+}
+.slideshow-container {
+            width: 400px; /* Set desired width */
+            height: 300px; /* Set desired height */
+            position: relative;
+            margin-left: 130px;
+            
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+    </style>
+    </head>
+<body>
+    <div class="one">
+    <div class="navbar">
+        <div class="logo">
+            <i class="fas fa-bars menu-icon"></i>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="attach1.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="newmen.html" class="nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span class="link-text">Menu</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="total_orders.php" class="nav-link">
+                    <i class="fas fa-box"></i>
+                    <span class="link-text">Orders</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="cart.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="link-text">Cart</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="delivery.html" class="nav-link">
+                    <i class='bx bxs-map'></i>
+                    <span class="link-text">Delivery Address</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="profile.php" class="nav-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="link-text">Profile</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="help.html" class="nav-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span class="link-text">Help & Support</span>
+                </a>
+            </li>
+            <div class="log">
+            <li class="nav-item">
+                <a href="logout.php" class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="link-text">Logout</span>
+                </a>
+            </li>
+            </div>
+        </ul>
+    </div>
+    <script src="sidebar.js"></script>
+    <div class="nav1">
+        <div class="whole">
+          <div class="logo"><h1>Canteen<b>2</b>Campus</h1></div>
+              <div class="content">
+                  <div class="content-left">
+                      <div class="info">
+                          <h2>Order Your Best<br>Food item</h2>
+                          <p>Hey,Our delicious food is waiting for you,<br>
+                          We are always near to you  with fresh item of food within our service times</p>
+                      </div>
+                      <a style="text-decoration: none;color: black;" href="newmen.html"><button>Explore Food</button></a>
+                  </div>
+                  <div class="text">
+                      <P><b>Canteen2Campus</b>is your go-to platform for delicious and hygienic food, delivered directly from your favorite campus canteens to students and faculty members. Our service ensures that you get access to a wide variety of freshly prepared meals, made with the highest standards of cleanliness. Whether you're craving a hearty meal, a quick snack, or something healthy, <b>Canteen2Campus </b>has you covered with an array of tasty options that cater to all dietary preferences. We prioritize hygiene at every step, from the preparation of the food to its packaging and delivery, ensuring you get nothing but the best.</P>
+                  </div>
+              </div>
+          </div>      
+            <div class="entire">
+                  <div class="content-right" style="padding-left: 150px;">
+                      <img id="logo1" src="images/[freepicdownloader.com]-bowl-rice-with-chicken-rice-large (1).jpg">
+                    </div>
+                      <div class="resp">
+                        <div class="slideshow-container">
+                            <!-- Slideshow images -->
+                            <div class="slides">
+                                <img src="images/canteen.jpg" alt="Image 1">
+                            </div>
+                            <div class="slides">
+                                <img src="images/Gulab-Jamun.jpg" alt="Image 2">
+                            </div>
+                            <div class="slides">
+                                <img src="images/black-current-ice-cream.jpg" alt="Image 3">
+                            </div>
+                            <div class="slides">
+                                <img src="images/irani chai.jpg" alt="Image 4">
+                            </div>
+                        </div>
+                    
+                    
+                 
+                    </div>
+                   
+              </div>
+            </div>
+      <section class="category">
+          <div class="list-items">
+              <h3>OUR POPULAR DISHES</h3>
+              <div class="card-list">
+                  <div class="card">
+                      <img src="images/burger.jpg">
+                   <div class="food-title">
+                      <h1>Shrimp Burger</h1>
+                   </div>
+                   <div class="desc-food">
+                      <p>This hearty shrimp burger is a nod to the classic New Orleans po'boy, but without the hassle of pulling out the deep fryer.</p>
+                   </div>
+                   <div class="price">
+                      <span>₹119</span>
+                   </div>
+                  </div>
+                  <div class="card">
+                      <img src="images/[freepicdownloader.com]-bowl-rice-with-chicken-rice-large (1).jpg">
+                   <div class="food-title">
+                      <h1>Fasak Special Biryani</h1>
+                   </div>
+                   <div class="desc-food">
+                      <p>Biryani contains more gravy (or yakhni), and is often cooked longer, leaving the meat (and vegetables, if present) more tender, and the rice more flavoured</p>
+                   </div>
+                   <div class="price">
+                      <span>₹169</span>
+                   </div>
+                  </div>
+                  <div class="card">
+                      <img src="images/chocake.jpg">
+                   <div class="food-title">
+                      <h1>Double Dark Chocolate</h1>
+                   </div>
+                   <div class="desc-food">
+                      <p>Cookbook author Peggy Cullen fills her tender chocolate cupcakes with a creamy, salty peanut butter mixture, then dips the tops twice in a rich, silky chocolate ganache frosting. </p>
+                      <p></p>
+                   </div>
+                   <div class="price">
+                      <span>₹99</span>
+                   </div>
+                  </div>
+                  <div class="card">
+                      <img src="images/chai.jpg">
+                   <div class="food-title">
+                      <h1>Irani Chai</h1>
+                   </div>
+                   <div class="desc-food">
+                      <p>The standard ingredients used to make a Irani Chai are loose leaf tea/ dust, a milk product, cardamoms, and sugar. Some versions also use a special Chai Spice blend.</p>
+                   </div>
+                   <div class="price">
+                      <span>₹25 </span>
+                   </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <div class="new">
+      <h1>Our Chefs</h1>
+      </div>
+      <div class="bottom">
+      <div class="chef-feed">
+          <h2>Customer<span style="color:red;">Feedback</span></h2>
+           <P>we highly value customer feedback as it helps us continuously improve our services. Our customers have praised the platform for offering a wide selection of hygienic and delicious meals that cater to various tastes and dietary needs. Many students and faculty members appreciate the convenience of having fresh food delivered right to their campus, allowing them to focus on their busy schedules without worrying about meal prep. The emphasis on hygiene and food quality has earned us positive reviews, with customers noting the freshness of ingredients and the care put into packaging.<br>Speedy delivery is another aspect frequently highlighted in customer feedback. Users love how quickly they receive their meals, even during peak hours, ensuring their food arrives hot and ready to eat. Moreover, many have mentioned the affordability of the service, appreciating that they can enjoy great food at reasonable prices. Overall, Canteen2Campus has become a trusted name for campus food delivery, with customers expressing high levels of satisfaction.</P>
+      <div class="chef-vic">
+          <div>
+              <i class='bx bxl-gmail'></i>
+              <h4>mail</h4>
+              <P>canteen2campus provides mail services to deliver and order food and any other related issues</P>
+          </div>
+          <div>
+              <i class='bx bxs-phone-call' ></i>
+              <h4>support</h4>
+              <p>Canteen2Campus allows help and support to you for any problem </p>
+          </div>
+      </div>
+          </div>
+    
+          <div class="chef">
+          
+              <div class="one">
+
+              <div class="chef1">
+              <img src="images/chef1.jpg">
+              </div>
+              </div>
+              <div class="one">
+              <div class="chef2">
+              <img src="images/chef2.jpg">
+              </div>
+          </div>
+          <div class="one">
+              <div class="chef3">
+              <img src="images/chef3.jpg">
+              </div>
+          </div>
+          <div class="one">
+              <div class="chef4">
+              <img src="images/chef4.jpg"> 
+              </div>  
+          </div> 
+          </div>
+      </div>
+             <!-- Social Media Section -->
+             <div class="social-section">
+                <a href="https://www.instagram.com" target="_blank" class="social-box">
+                    <i class='bx bxl-instagram'></i>
+                    <h4>Instagram</h4>
+                    <p>Follow us on Instagram for the latest updates.</p>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-box">
+                    <i class='bx bxl-facebook'></i>
+                    <h4>Facebook</h4>
+                    <p>Like our Facebook page to stay connected.</p>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-box">
+                    <i class='bx bxl-twitter'></i>
+                    <h4>Twitter</h4>
+                    <p>Follow us on Twitter for instant news.</p>
+                </a>
+                <a href="https://www.whatsapp.com" target="_blank" class="social-box">
+                    <i class='bx bxl-whatsapp'></i>
+                    <h4>WhatsApp</h4>
+                    <p>Chat with us on WhatsApp for support.</p>
+                </a>
+            </div>
+      <footer>
+          <p>&copy; 2024 YourFoodService. All Rights Reserved.</p>
+      </footer>
+    </div>
+    <script>let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  // Hide all slides
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;  // Reset to first image
+            }
+            slides[slideIndex - 1].style.display = "block";  // Show the current image
+            setTimeout(showSlides, 700);  // Change image every 2 seconds
+        }</script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="veg.css">
+
+   <!-- custom js file link  -->
+   <script src="veg.js" defer></script>
+
+</head>
+<body>
+   
+<div class="container">
+
+   <h3 class="title"><B>SNACKS</B> </h3>
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="snacks images/chaat.jpg".jpg" alt="chaat">
+         <h3>chaat</h3>
+         <div class="price">₹45</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="snacks images/Crispy-Corn.jpg" width:"200px" alt="Crispy-Corn">
+         <h3>Crispy-Corn</h3>
+         <div class="price">₹50</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="snacks images/dahi puri.jpg" alt="dahi puri">
+         <h3>dahi puri</h3>
+         <div class="price">₹30</div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="snacks images/frenchfries.jpg" alt="frenchfries">
+         <h3>frenchfries</h3>
+         <div class="price">₹66</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="snacks images/maggi.jpg" alt="maggi">
+         <h3>maggi</h3>
+         <div class="price">₹47</div>
+      </div>
+      <div class="product" data-name="p-6">
+         <img src="snacks images/momos.jpg" alt="momos">
+         <h3>momos</h3>
+         <div class="price">₹95</div>
+      </div>
+      <div class="product" data-name="p-7">
+         <img src="snacks images/panipuri.jpg" alt="panipuri">
+         <h3>panipuri</h3>
+         <div class="price">₹20</div>
+      </div>
+      <div class="product" data-name="p-8">
+         <img src="snacks images/pastry.jpg" width:"200px" alt="pastry">
+         <h3>pastry</h3>
+         <div class="price">₹79</div>
+      </div>
+     <div class="product" data-name="p-9">
+         <img src="snacks images/pav bhaji.jpg" alt="pav bhaji">
+         <h3>pav bhaji</h3>
+         <div class="price">₹40</div>
+      </div>
+   
+   <div class="product" data-name="p-10">
+       <img src="snacks images/popcorn.jpg" width:"200px" alt="popcorn">
+       <h3>popcorn</h3>
+       <div class="price">₹25</div>
+    </div>
+   <div class="product" data-name="p-11">
+       <img src="snacks images/samosa.jpg"  width:"200px" alt="samosa">
+       <h3>samosa</h3>
+       <div class="price">₹15</div>
+    </div>
+   
+   <div class="product" data-name="p-12">
+       <img src="snacks images/sandwiches.jpg" alt="sandwiches">
+       <h3>sandwiches</h3>
+       <div class="price">₹50</div>
+    </div>
+
+   <div class="product" data-name="p-13">
+       <img src="snacks images/spring rolls.jpg" alt="spring rolls">
+       <h3>spring rolls</h3>
+       <div class="price">₹59</div>
+    </div>
+   <div class="product" data-name="p-14">
+       <img src="snacks images/vadapav.jpg" alt="vadapav">
+       <h3>vadapav</h3>
+       <div class="price">₹39</div>
+    </div>
+   <div class="product" data-name="p-15">
+       <img src="snacks images/chicken nuggets.jpg" alt="chicken nuggets">
+       <h3>chicken nuggets</h3>
+       <div class="price">₹89</div>
+    </div>
+  
+   </div>
+
+
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="snacks images/chaat.jpg" alt="chaat">
+      <h3>chaat</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Chaat is a broad category of snacks that can be sweet, savory, spicy, or crunchy.</p>
+      <div class="price">₹45</div>
+      <div class="buttons" >
+         <a href="buy.html?name=chaat&price=45&image=snacks images/chaat.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('chaat', 45, 'snacks images/chaat.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="snacks images/Crispy-Corn.jpg" width:"200px" alt="Crispy-Corn">
+      <h3>Crispy-Corn</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>it is made by frying corn kernels and seasoning them with spices and herbs</p>
+      <div class="price">₹50</div>
+      <div class="buttons">
+         <a href="buy.html?name=Crispy-Corn&price=50&image=snacks images/Crispy-Corn.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('Crispy-Corn', 50, 'snacks images/Crispy-Corn.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="snacks images/dahi puri.jpg" alt="dahi puri">
+      <h3>dahi puri</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>o
+      </div>
+      <p> Dahi puri is a crispy shell stuffed with boiled potatoes, onions, tomatoes, curd, ground spices, chutneys and sev.</p>
+      <div class="price">₹30</div>
+      <div class="buttons">
+         <a href="buy.html?name=dahi puri&price=30&image=snacks images/dahi puri.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('dahi puri', 30, 'snacks images/dahi puri.jpg')">add to cart</a>
+      </div>
+   </div>
+   
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="snacks images/frenchfries.jpg" alt="frenchfries">
+      <h3>frenchfries</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p> they are made from deep-fried potatoes that have been cut into various shapes</p>
+      <div class="price">₹66</div>
+      <div class="buttons" >
+         <a href="buy.html?name=frenchfries&price=66&image=snacks images/frenchfries.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('frenchfries', 66, 'snacks images/frenchfries.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="snacks images/maggi.jpg" alt="maggi">
+      <h3>maggi</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Made with a blend of finely ground and whole spices, and herbs</p>
+      <div class="price">₹47</div>
+      <div class="buttons">
+         <a href="buy.html?name=maggi&price=47&image=snacks images/maggi.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('maggi', 47, 'snacks images/maggi.jpg')" >add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="snacks images/momos.jpg" alt="momos">
+      <h3>momos</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Momos are a type of steamed dumpling.</p>
+      <div class="price">₹95</div>
+      <div class="buttons">
+         <a href="buy.html?name=momos&price=95&image=snacks images/momos.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('momos', 95, 'snacks images/momos.jpg')">add to cart</a>
+      </div>
+      
+   </div>
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="snacks images/panipuri.jpg" alt="panipuri">
+      <h3>panipuri</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>it is a deep-fried breaded hollow spherical shell filled with a combination of potato, onion and chickpea..</p>
+      <div class="price">₹20</div>
+      <div class="buttons">
+         <a href="buy.html?name=panipuri&price=20&image=snacks images/panipuri.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('panipuri', 20, 'snacks images/panipuri.jpg')">add to cart</a>
+      </div>  
+   
+
+</div>
+<div class="preview" data-target="p-8">
+   <i class="fas fa-times"></i>
+   <img src="snacks images/pastry.jpg" alt="pastry">
+   <h3>pastry</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Pastry refers to a variety of doughs as well as the sweet and savoury baked goods made from them</p>
+   <div class="price">₹79</div>
+   <div class="buttons">
+      <a href="buy.html?name=pastry&price=79&image=snacks images/pastry.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('pastry', 79, 'snacks images/pastry.jpg')" >add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-9">
+   <i class="fas fa-times"></i>
+   <img src="snacks images/pav bhaji.jpg" alt="pav bhaji">
+   <h3>pav bhaji</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>it is made of a thick vegetable curry (bhaji) served with a soft bread roll (pav).</p>
+   <div class="price">₹40</div>
+   <div class="buttons">
+      <a href="buy.html?name=pav bhaji&price=40&image=snacks images/pav bhaji.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('pav bhaji', 40, 'snacks images/pav bhaji.jpg')" >add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-10">
+   <i class="fas fa-times"></i>
+   <img src="snacks images/popcorn.jpg" alt="popcorn">
+   <h3>popcorn</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Popcorn is a type of maize (or corn).</p>
+   <div class="price">₹25</div>
+   <div class="buttons">
+      <a href="buy.html?name=popcorn&price=25&image=snacks images/popcorn.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('popcorn', 25, 'snacks images/popcorn.jpg')" >add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-11">
+   <i class="fas fa-times"></i>
+   <img src="snacks images/samosa.jpg" alt="samosa">
+   <h3>samosa</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>It is a pastry with a savory filling, mostly vegetables, spiced potatoes, onions, peas, also non-vegetarian meat, or fish.</p>
+   <div class="price">₹15</div>
+   <div class="buttons">
+      <a href="buy.html?name=samosa&price=15&image=snacks images/samosa.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('samosa', 15, 'snacks images/samosa.jpg')" >add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-12">
+   <i class="fas fa-times"></i>
+   <img src="snacks images/sandwiches.jpg" alt="sandwiches">
+   <h3>sandwiches</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>A sandwich is made of two pieces of bread with a filling in between, such as meat, cheese, or vegetables. </p>
+   <div class="price">₹50</div>
+   <div class="buttons">
+      <a href="buy.html?name=sandwiches&price=50&image=snacks images/sandwiches.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('sandwiches', 50, 'snacks images/sandwiches.jpg')" >add to cart</a>
+   </div>
+   </div>
+
+<div class="preview" data-target="p-13">
+   <i class="fas fa-times"></i>
+   <img src="starters images/chilli prawns.jpg" alt="chilli prawns">
+   <h3>chilli prawns</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>A dish of crispy prawns coated in a spicy, sweet, tangy, and hot chili sauce. </p>
+   <div class="price">₹135</div>
+   <div class="buttons">
+      <a href="buy.html?name=chilli prawns=&price=135&image=starters images/chilli prawns.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('chilli prawns', 135, 'starters images/chilli prawns.jpg')" >add to cart</a>
+   </div>
+   </div>
+   <div class="preview" data-target="p-14">
+      <i class="fas fa-times"></i>
+      <img src="snacks images/spring rolls.jpg" alt="spring rolls">
+      <h3>spring rolls</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>spring rolls are savoury rolls with cabbage and other vegetable fillings inside a thinly wrapped cylindrical pastry. </p>
+      <div class="price">₹59</div>
+      <div class="buttons">
+         <a href="buy.html?name=spring rolls&price=59&image=snacks images/spring rolls.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('spring rolls', 59, 'snacks images/spring rolls.jpg')" >add to cart</a>
+      </div>
+      </div>
+      <div class="preview" data-target="p-15">
+         <i class="fas fa-times"></i>
+         <img src="snacks images/chicken nuggets.jpg" alt="chicken nuggets">
+         <h3>chicken nuggets</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>A chicken nugget consists of a small piece of deboned chicken meat that is breaded or battered, then deep-fried or baked.</p>
+         <div class="price">₹89</div>
+         <div class="buttons">
+            <a href="buy.html?name=chicken nuggets&price=89&image=snacks images/chicken nuggets.jpg" class="buy">buy now</a>
+            <a href="#" class="cart"  onclick="addToCart('chicken nuggets', 89, 'snacks images/chicken nuggets.jpg')" >add to cart</a>
+         </div>
+         </div>
+         
+                         
+</div>
+
+
+</body>
+</html>

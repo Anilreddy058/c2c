@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="sidebar.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="cart.css">
+    <style>
+        /* /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(135deg, #c3ec52, #0ba29d);
+    color: #333;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+/* Main content styling */
+main {
+    width: 85%;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Cart items container styling */
+#cart-items-container {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+}
+
+/* Styling for individual cart items */
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border: 1px solid #e0e0e0; /* Border for separation */
+}
+
+.cart-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Item image styling */
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 2px solid #0ba29d; /* Border around the image */
+}
+
+/* Text styling for cart items */
+.cart-item-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-item-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.cart-item-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Cart summary styling */
+#cart-summary {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: #0ba29d;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#total-price {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+General Styling */
+
+    </style>
+</head>
+<body>
+    <div class="one">
+    <div class="navbar">
+        <div class="logo">
+            <i class="fas fa-bars menu-icon"></i>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="attach1.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="newmen.html" class="nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span class="link-text">Menu</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="total_orders.php" class="nav-link">
+                    <i class="fas fa-box"></i>
+                    <span class="link-text">Orders</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="cart.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="link-text">Cart</span>
+                </a>
+            </li>
+            <li class="nav-item">
+            <a href="delivery.html" class="nav-link">
+                <i class='bx bxs-map'></i>
+                <span class="link-text">Delivery Address</span>
+            </a>
+        </li>
+            <li class="nav-item">
+                <a href="profile.php" class="nav-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="link-text">Profile</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="help.html" class="nav-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span class="link-text">Help & Support</span>
+                </a>
+            </li>
+            <div class="log">
+            <li class="nav-item">
+                <a href="logout.php" class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="link-text">Logout</span>
+                </a>
+            </li>
+            </div>
+        </ul>
+    </div>
+    
+    <header>
+        <h1>Your Cart</h1>
+    </header>
+
+    <main>
+        <div id="cart-items-container">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="cart-summary">
+            <h2>Total: <span id="total-price">₹0.00</span></h2>
+            
+        </div>
+        
+    </main>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>  

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="veg.css">
+
+   <!-- custom js file link  -->
+   <script src="veg.js" defer></script>
+
+</head>
+<body>
+   
+<div class="container">
+
+   <h3 class="title"> DESSERTS </h3>
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="images/Gulab-Jamun.jpg" alt="GulabJamun">
+         <h3>GulabJamun</h3>
+         <div class="price">₹85</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="images/jalebi.jpg" width:"200px" alt="jalebi">
+         <h3>jalebi</h3>
+         <div class="price">₹99</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="images/kheer.jpg" alt="kheer">
+         <h3>kheer </h3>
+         <div class="price">₹77</div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="images/laddoo.jpg" alt="laddoo">
+         <h3>laddoo</h3>
+         <div class="price">₹98</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="images/mysore pak.jpg" alt="mysore pak">
+         <h3>mysore pak</h3>
+         <div class="price">₹111</div>
+      </div>
+      <div class="product" data-name="p-6">
+         <img src="images/gajar-ka-halwa.jpg" alt="gajar-ka-halwa">
+         <h3>gajar-ka-halwa</h3>
+         <div class="price">₹105</div>
+      </div>
+      <div class="product" data-name="p-7">
+         <img src="images/rasgulla.jpg" alt="rasgulla">
+         <h3>rasgulla</h3>
+         <div class="price">₹105</div>
+      </div>
+      <div class="product" data-name="p-8">
+         <img src="images/kaju barfi.jpg" width:"200px" alt="kaju barfi">
+         <h3>kaju barfi</h3>
+         <div class="price">₹97</div>
+      </div>
+     <div class="product" data-name="p-9">
+         <img src="images/putharekulu.jpg" alt="putharekulu">
+         <h3>putharekulu</h3>
+         <div class="price">₹95</div>
+      </div>
+   
+   <div class="product" data-name="p-10">
+       <img src="images/beetroot halva.jpg" width:"200px" alt="beetroot halva">
+       <h3>beetroot halva</h3>
+       <div class="price">₹99</div>
+    </div>
+   <div class="product" data-name="p-11">
+       <img src="images/Double-ka-Meetha.jpg"  width:"200px" alt="Double-ka-Meetha">
+       <h3>Double-ka-Meetha</h3>
+       <div class="price">₹95</div>
+    </div>
+   
+   <div class="product" data-name="p-12">
+       <img src="images/kulfi.jpg" alt="kulfi">
+       <h3>kulfi</h3>
+       <div class="price">₹50</div>
+    </div>
+
+   <div class="product" data-name="p-13">
+       <img src="images/black-current-ice-cream.jpg" alt="black-current-ice-cream">
+       <h3>black-current-ice-cream</h3>
+       <div class="price">₹89</div>
+    </div>
+   <div class="product" data-name="p-14">
+       <img src="images/butterscotch icecream.jpg" alt="butterscotch icecream">
+       <h3>butterscotch icecream</h3>
+       <div class="price">₹99</div>
+    </div>
+   <div class="product" data-name="p-15">
+       <img src="images/caramel ice-cream.jpg" alt="caramel ice-cream">
+       <h3>caramel ice-cream</h3>
+       <div class="price">₹95</div>
+    </div>
+
+   <div class="product" data-name="p-16">
+       <img src="images/chocolate icecream.jpg" alt="chocolate icecream">
+       <h3>chocolate ice-cream</h3>
+       <div class="price">₹85</div>
+    </div>
+   <div class="product" data-name="p-17">
+       <img src="images/Cookies-and-Cream-Icecream.jpg" alt="Cookies-and-Cream-Icecream">
+       <h3>Cookies-and-Cream-Icecream</h3>
+       <div class="price">₹99</div>
+    </div>
+   <div class="product" data-name="p-18">
+       <img src="images/mint chocolate chip.jpeg" alt="mint chocolate chip">
+       <h3>mint chocolate chip ice-cream</h3>
+       <div class="price">₹75</div>
+    </div>
+   <div class="product" data-name="p-19">
+       <img src="images/Strawberry-Ice-Cream.jpg" alt="Strawberry-Ice-Cream">
+       <h3>Strawberry-Ice-Cream</h3>
+       <div class="price">₹88</div>
+    </div>
+   <div class="product" data-name="p-20">
+       <img src="images/vanila icecream.jpg" alt="vanila icecream">
+       <h3>vanila icecream</h3>
+       <div class="price">₹79</div>
+    </div>
+
+      
+   </div>
+
+
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/Gulab-Jamun.jpg" alt="Gulab-Jamun">
+      <h3>Gulab-Jamun</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Gulab jamun is a popular Indian dessert of fried dough balls soaked in a sweet, rose-scented syrup</p>
+      <div class="price">₹85</div>
+      <div class="buttons" >
+         <a href="buy.html?name=Gulab-Jamun&price=85&image=images/Gulab-Jamun.jpg" class="buy" >buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('Gulab-Jamun', 85 ,'images/Gulab-Jamun.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="images/jalebi.jpg" width:"200px" alt="jalebi">
+      <h3>jalebi</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Jalebi is a popular South Asian dessert that's crispy on the outside and chewy on the inside, and is often eaten with yogurt or milk</p>
+      <div class="price">₹99</div>
+      <div class="buttons">
+         <a href="buy.html?name=jalebi&price=99&image=images/jalebi.jpg" class="buy" >buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('jalebi', 99, 'images/jalebi.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/kheer.jpg" alt="kheer">
+      <h3>kheer </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>o
+      </div>
+      <p>Kheer is a chilled rice pudding-like dessert that's popular in the Indian subcontinent.</p>
+      <div class="price">₹77</div>
+      <div class="buttons">
+         <a href="buy.html?name=kheer&price=77&image=images/Kheer.jpg" class="buy" >buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('kheer', 77, 'images/kheer.jpg')">add to cart</a>
+      </div>
+   </div>
+   
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="images/laddoo.jpg" alt="laddoo">
+      <h3>laddoo</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Laddu is a spherical sweet from the Indian subcontinent that's often served at religious and festive occasions</p>
+      <div class="price">₹98</div>
+      <div class="buttons" >
+         <a href="buy.html?name=laddoo&price=98&image=images/laddoo.jpg" class="buy" >buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('laddoo', 98, 'images/laddoo.jpg')">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="images/mysore pak.jpg" alt="mysore pak">
+      <h3>mysore pak</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Mysore Pak is a traditional South Indian sweet that originated in the kitchens of the Mysore Palace in the 19th century</p>
+      <div class="price">₹111</div>
+      <div class="buttons">
+         <a href="buy.html?name=mysore pak&price=111&image=images/mysore pak.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('mysore pak', 111, 'images/mysore pak.jpg')" >add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/gajar-ka-halwa.jpg" alt="gajar-ka-halwa">
+      <h3>gajar-ka-halwa</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>gajar-ka-halwa is a carrot-based sweet dessert pudding made by placing grated carrots in a pot containing a specific amount of water, milk, sugar, and cardamom and then cooking while stirring regularly.</p>
+      <div class="price">₹105</div>
+      <div class="buttons">
+         <a href="buy.html?name=gajar-ka-halwa&price=105&image=images/gajar-ka-halwa.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('gajar-ka-halwa', 105, 'images/gajar-ka-halwa.jpg')">add to cart</a>
+      </div>
+      
+   </div>
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="images/rasgulla.jpg" alt="rasgulla">
+      <h3>rasgulla</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Rasgulla is a traditional Indian dessert of soft, spongy, ball-shaped dumplings made from chhena dough and cooked in sugar syrup.</p>
+      <div class="price">₹105</div>
+      <div class="buttons">
+         <a href="buy.html?name=rasgulla&price=105&image=images/rasgulla.jpg" class="buy">buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('rasgulla', 105, 'images/rasgulla.jpg')">add to cart</a>
+      </div>  
+   
+
+</div>
+<div class="preview" data-target="p-8">
+   <i class="fas fa-times"></i>
+   <img src="images/kaju barfi.jpg" alt="kaju barfi">
+   <h3>kaju barfi</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Kaju barfi, also known as kaju katli, is a traditional Indian dessert made with cashews, sugar</p>
+   <div class="price">₹97</div>
+   <div class="buttons">
+      <a href="buy.html?name=kaju barfi&price=97&image=images/kaju barfi.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('kaju barfi', 97, 'images/kaju barfi.jpg')" >add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-9">
+   <i class="fas fa-times"></i>
+   <img src="images/putharekulu.jpg" alt="putharekulu">
+   <h3>putharekulu</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>The sweet is wrapped in a wafer-thin rice starch layer resembling paper and is stuffed with sugar, dry fruits and nuts.</p>
+   <div class="price">₹95</div>
+   <div class="buttons">
+      <a href="buy.html?name=putharekulu&price=95&image=images/putharekulu.jpg" class="buy" >buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('putharekulu', 95, 'images/putharekulu.jpg')" >add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-10">
+   <i class="fas fa-times"></i>
+   <img src="images/beetroot halva.jpg" alt="beetroot halva">
+   <h3>beetroot halva</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Beetroot halwa is a rich and creamy Indian pudding or dessert made from beetroot, milk, sugar, and cardamom.</p>
+   <div class="price">₹99</div>
+   <div class="buttons">
+      <a href="buy.html?name=beetroot halva&price=99&image=images/beetroot halva.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('beetroot halva', 99, 'images/beetroot halva.jpg')" >add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-11">
+   <i class="fas fa-times"></i>
+   <img src="images/Double-ka-Meetha.jpg" alt="Double-ka-Meetha">
+   <h3>Double-ka-Meetha</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Double ka meetha also known as Shahi Tukra, is an Indian bread pudding sweet made of fried bread slices soaked in hot milk</p>
+   <div class="price">₹95</div>
+   <div class="buttons">
+      <a href="buy.html?name=Double-ka-Meetha&price=95&image=images/Double-ka-Meetha.jpg" class="buy" >buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('Double-ka-Meetha', 95, 'images/Double-ka-Meetha.jpg')" >add to cart</a>
+   </div>
+</div>
+<div class="preview" data-target="p-12">
+   <i class="fas fa-times"></i>
+   <img src="images/kulfi.jpg" alt="kulfi">
+   <h3>kulfi</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Kulfi is a frozen, dense, and creamy dessert that originated in the kitchens of the Mughal Empire</p>
+   <div class="price">₹50</div>
+   <div class="buttons">
+      <a href="buy.html?name=kulfi&price=99&image=images/kulfi.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('kulfi', 50, 'images/kulfi.jpg')" >add to cart</a>
+   </div>
+   </div>
+
+<div class="preview" data-target="p-13">
+   <i class="fas fa-times"></i>
+   <img src="images/black-current-ice-cream.jpg" alt="black-current-ice-cream">
+   <h3>black-current-ice-cream</h3>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Black currant ice cream is a creamy, tart, and fruity ice cream .</p>
+   <div class="price">₹89</div>
+   <div class="buttons">
+      <a href="buy.html?name=black-current-ice-cream&price=89&image=images/black-current-ice-cream.jpg" class="buy">buy now</a>
+      <a href="#" class="cart"  onclick="addToCart('black-current-ice-cream', 89, 'images/black-current-ice-cream.jpg')" >add to cart</a>
+   </div>
+   </div>
+   <div class="preview" data-target="p-14">
+      <i class="fas fa-times"></i>
+      <img src="images/butterscotch icecream.jpg" alt="butterscotch">
+      <h3>butterscotch ice-cream</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p> ice cream is made with homemade butterscotch sauce, whipping cream and condensed milk</p>
+      <div class="price">₹99</div>
+      <div class="buttons">
+         <a href="buy.html?name=butterscotch icecream&price=99&image=images/butterscotch icecream.jpg" class="buy" >buy now</a>
+         <a href="#" class="cart"  onclick="addToCart('butterscotch', 99, 'images/butterscotch.jpg')" >add to cart</a>
+      </div>
+      </div>
+      <div class="preview" data-target="p-15">
+         <i class="fas fa-times"></i>
+         <img src="images/caramel ice-cream.jpg" alt="caramel ice-cream">
+         <h3>caramel ice-cream</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Caramel ice cream is a classic flavor that's rich, creamy, and smooth, with a sweet and nutty taste</p>
+         <div class="price">₹95</div>
+         <div class="buttons">
+            <a href="buy.html?name=caramel ice-cream&price=99&image=images/caramel ice-cream.jpg" class="buy">buy now</a>
+            <a href="#" class="cart"  onclick="addToCart('caramel ice-cream', 95, 'images/caramel ice-cream.jpg')" >add to cart</a>
+         </div>
+         </div>
+         <div class="preview" data-target="p-16">
+            <i class="fas fa-times"></i>
+            <img src="images/chocolate icecream.jpg" alt="chocolate ice-cream">
+            <h3>chocolate ice-cream</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>Chocolate ice cream is made by blending in cocoa powder in along with the cream, vanilla and sugar</p>
+            <div class="price">₹85</div>
+            <div class="buttons">
+               <a href="buy.html?name=chocolate icecream&price=85&image=images/chocolate icecream.jpg" class="buy" >buy now</a>
+               <a href="#" class="cart"  onclick="addToCart('chocolate ice-cream', 85, 'images/chocolate ice-cream.jpg')" >add to cart</a>
+            </div>
+            </div>
+            <div class="preview" data-target="p-17">
+               <i class="fas fa-times"></i>
+               <img src="images/Cookies-and-Cream-Icecream.jpg" alt="Cookies-and-Cream-Icecream">
+               <h3>Cookies-and-Cream-Icecream</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p>this ice cream is a classic ice cream flavor that combines the taste of vanilla ice cream with the crunch of chocolate sandwich cookies</p>
+               <div class="price">₹99</div>
+               <div class="buttons">
+                  <a href="buy.html?name=Cookies-and-Cream-Icecream&price=99&image=images/Cookies-and-Cream-Icecream.jpg" class="buy">buy now</a>
+                  <a href="#" class="cart"  onclick="addToCart('Cookies-and-Cream-Icecream', 99, 'images/Cookies-and-Cream-Icecream.jpg')" >add to cart</a>
+               </div>
+               </div>
+               <div class="preview" data-target="p-18">
+                  <i class="fas fa-times"></i>
+                  <img src="images/mint chocolate chip.jpeg" alt="mint chocolate chip">
+                  <h3>mint chocolate chip</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                     <span>( 250 )</span>
+                  </div>
+                  <p>this ice cream is a popular flavor that combines mint ice cream with chocolate chips</p>
+                  <div class="price">₹75</div>
+                  <div class="buttons">
+                     <a href="buy.html?name=mint chocolate chip&price=75&image=images/mint chocolate chip.jpg" class="buy" >buy now</a>
+                     <a href="#" class="cart"  onclick="addToCart('mint chocolate chip', 75, 'images/mint chocolate chip.jpg')" >add to cart</a>
+                  </div>
+                  </div>
+                  <div class="preview" data-target="p-19">
+                     <i class="fas fa-times"></i>
+                     <img src="images/Strawberry-Ice-Cream.jpg" alt="Strawberry-Ice-Cream">
+                     <h3>Strawberry-Ice-Cream</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                     </div>
+                     <p>Strawberry ice cream is a popular ice cream flavor that's made with strawberries or strawberry flavoring</p>
+                     <div class="price">₹88</div>
+                     <div class="buttons">
+                        <a href="buy.html?name=Strawberry-Ice-Cream&price=88&image=images/Strawberry-Ice-Cream.jpg" class="buy" >buy now</a>
+                        <a href="#" class="cart"  onclick="addToCart('Strawberry-Ice-Cream', 88, 'images/Strawberry-Ice-Cream.jpg')" >add to cart</a>
+                     </div>
+                     </div>
+                     <div class="preview" data-target="p-20">
+                        <i class="fas fa-times"></i>
+                        <img src="images/vanila icecream.jpg" alt="vanila ice-cream">
+                        <h3>vanila ice-cream</h3>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                           <span>( 250 )</span>
+                        </div>
+                        <p>this was originally created by cooling a mixture made of cream, sugar, and vanilla</p>
+                        <div class="price">₹79</div>
+                        <div class="buttons">
+                           <a href="buy.html?name=vanila icecream&price=79&image=images/vanila icecream.jpg" class="buy" >buy now</a>
+                           <a href="#" class="cart"  onclick="addToCart('vanila ice-cream', 79, 'images/vanila ice-cream.jpg')" >add to cart</a>
+                        </div>
+                        </div>
+
+</div>
+
+
+</body>
+</html>

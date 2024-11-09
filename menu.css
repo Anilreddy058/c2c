@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #19b2b8;
+    color: #333;
+}
+
+/* Menu Header */
+.menu-header {
+    background-color: #7961ff;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+.menu-header h1 {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Menu Sections Layout */
+.menu-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.section {
+    background-color:bisque;
+    border-radius: 12px;
+    width: 75%;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    animation: bounceIn 0.8s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section img {
+    width: 90%;
+    height: 190px;
+    object-fit: cover;
+    border-radius:10px;
+    transition: transform 0.4s ease;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #ff6f61;
+    animation: colorShift 3s infinite alternate;
+}
+
+.section:hover img {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes colorShift {
+    0% {
+        color: #7361ff;
+    }
+    100% {
+        color:black;
+    }
+}
+
+/* Section-specific colors */
+.veg-section {
+    border-top: 5px solid #27ae60;
+}
+
+.non-veg-section {
+    border-top: 5px solid #e74c3c;
+}
+
+.desserts-section {
+    border-top: 5px solid #f1c40f;
+}
+
+.chai-section {
+    border-top: 5px solid #8e44ad;
+}
+
+.tiffins-section {
+    border-top: 5px solid #2980b9;
+}
+
+.snacks-section {
+    border-top: 5px solid #d35400;
+}
+
+.curries-section {
+    border-top: 5px solid #c0392b;
+}
+
+.chinese-section {
+    border-top: 5px solid #0ec454;
+}
+.starters-section{
+    border-top: 5px solid #8e44ad;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.one1
+{
+    display: flex;
+    flex-direction: column;
+}

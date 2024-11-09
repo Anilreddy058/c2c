@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",san serifs;
+    
+    background: url('images/logo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 90vh;
+}
+.logo {
+position: absolute; /* Position it absolutely */
+top: 20px; /* Adjust as needed */
+left: 20px; /* Adjust as needed */
+width: 130px; /* Set width for the circle */
+height: 140px; /* Set height for the circle */
+overflow: hidden; /* Hide overflow */
+border-radius: 50%; /* Make it circular */
+}
+
+.logo img {
+width: 130%; /* Make the image fill the circle */
+height: auto; /* Maintain aspect ratio */
+display: block; /* Remove extra space below the image */;
+}
+
+.c2c h1 {
+    color:black;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px; /* Adjust this value for more/less space between h1 and form */
+    font-family: "poppins",san serifs;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.wrapper {
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Blurs background behind the form */
+    max-width: 400px;
+    width: 300%;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 140%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 10px rgba(0, 150, 255, 0.6);
+    outline: none;
+}
+
+label {
+    color: black;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 4px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7043;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #ff5722;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input:focus + label {
+    color: #ff7043;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 8px rgba(255, 150, 0, 0.6);
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .c2c h1 {
+        font-size: 2.2em;
+    }
+
+    .btn {
+        font-size:16px;
+     }
+}
